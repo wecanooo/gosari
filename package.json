@@ -13,6 +13,7 @@
     "@release-it/conventional-changelog": "5.1.1",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
+    "dotenv-cli": "7.2.1",
     "release-it": "15.11.0"
   },
   "release-it": {
