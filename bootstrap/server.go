@@ -14,8 +14,8 @@ func setupServer(fn func(router *core.Application)) {
 	core.SetupLog()
 
 	e := echo.New()
-	//e.Debug = core.GetConfig().IsDev()
-	//e.HideBanner = true
+	e.Debug = core.GetConfig().IsDev()
+	e.HideBanner = true
 
 	core.NewApplication(e)
 
