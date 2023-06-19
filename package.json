@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "cz": "git-cz",
-    "release": "release-it"
+    "release": "dotenv release-it --"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "5.1.1",
