@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func SetupServer(fn func(router *core.Application)) {
+func setupServer(fn func(router *core.Application)) {
 	core.SetupLog()
 
 	e := echo.New()
@@ -58,7 +58,9 @@ func defaultMiddleware(app *echo.Echo) {
 	}
 }
 
-func RunServer() {
+func RunServer(fn func(router *core.Application)) {
+	setupServer(fn)
+
 	if core.GetConfig().Bool("APP.PROFILE") {
 		runtime.SetBlockProfileRate(1)
 		go func() {
