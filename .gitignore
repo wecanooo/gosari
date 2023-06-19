@@ -16,6 +16,7 @@
 
 .idea
 /node_modules
+/tmp
 
 # debug
 npm-debug.log*
