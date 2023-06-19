@@ -19,6 +19,7 @@
 .idea
 /node_modules
 /tmp
+/examples
 
 # debug
 npm-debug.log*
